@@ -1,0 +1,224 @@
+ body{
+      margin: 0;
+      padding: 0;
+      background-color:hsl(30, 38%, 92%) ;
+    }
+
+    .container{
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+      
+    }
+
+    .image img{
+      width: 300px;
+      height: 450px;
+      border-radius: 8px;
+    }
+    .content{
+      background-color:hsl(0, 0%, 100%) ;
+      width: 300px;
+      height: 450px;
+      border-radius: 8px;
+    }
+    h3{
+      font-size: 16px;
+      font-family:'Courier New', Courier, monospace;
+      text-align: left;
+      margin-left: 25px;
+      color: hsl(228, 12%, 48%);
+      
+    }
+
+    h1{
+      font-size: 40px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: left;
+      margin-left: 25px;
+    }
+
+    p{
+      font-size: 14px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 25px;
+      text-align: left;
+      color: hsl(228, 12%, 48%) ;
+    }
+
+    .letters{
+      display: flex;
+      margin-left: 25px;
+      align-items: center;
+      
+    }
+
+    .letters h2{
+      font-size: 30px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color:  hsl(158, 36%, 37%);
+    }
+
+    .letters p{
+      font-size: 15px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: line-through;
+    }
+
+    button{
+      background-color: hsl(158, 42%, 18%) ;
+      border-radius: 10px;
+      width: 150px;
+      height: 40px;
+      color: white; 
+      margin-left: 25px;
+      padding: 10px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+        .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color:hsl(228, 45%, 44%); }
+
+    /* ===========================
+       MOBILE RESPONSIVE STYLES
+       =========================== */
+
+    /* Tablets (max-width: 768px) */
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 20px;
+        flex-direction: column;
+      }
+
+      .image img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .content {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        border-radius: 8px;
+        padding-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-left: 20px;
+      }
+
+      h3 {
+        font-size: 14px;
+        margin-left: 20px;
+      }
+
+      p {
+        font-size: 13px;
+        margin-left: 20px;
+      }
+
+      .letters {
+        margin-left: 20px;
+      }
+
+      .letters h2 {
+        font-size: 28px;
+      }
+
+      .letters p {
+        font-size: 14px;
+      }
+
+      button {
+        width: 100%;
+        max-width: 230px;
+        height: 45px;
+        margin-left: 20px;
+        padding: 12px;
+      }
+    }
+
+    /* Phones (max-width: 480px) */
+    @media (max-width: 480px) {
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        padding: 20px 16px;
+        flex-direction: column;
+      }
+
+      .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .content {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        padding-bottom: 16px;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin-left: 16px;
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 12px;
+        margin-left: 16px;
+        margin-top: 12px;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 12px;
+        margin-left: 16px;
+        margin-right: 16px;
+        line-height: 1.5;
+      }
+
+      .letters {
+        margin-left: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        gap: 15px;
+      }
+
+      .letters h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .letters p {
+        font-size: 13px;
+        margin: 0;
+        margin-left: 10px;
+      }
+
+      button {
+        width: calc(100% - 32px);
+        max-width: none;
+        height: 48px;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 12px;
+        font-size: 14px;
+      }
+
+      .attribution {
+        font-size: 10px;
+        padding: 16px 0;
+      }
+    }
